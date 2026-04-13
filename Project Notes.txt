@@ -1,0 +1,14 @@
+mkdir - Used to make a new directory / folder in exact location it is useful for what are the files need to be extracted in which location
+
+Get-Content - Used to retrieve that what type of contents are inside the required folder
+Get path children _ Used to analyse in a deeper manner what we are really looking for ? *IPL* / means there can be any name before and after but the exact name what we are looking for is there or not 
+
+Rename-Item -Path "D:\IPL End to End Data Analysis Pipeline Project\ipl_data_pipeline\data\IPL_dataset_(2008 to 2024 ).csv" -NewName "IPL_dataset_(2008 to 2024).zip"  // Renames the file name 
+
+ Expand-Archive -Path "D:\IPL End to End Data Analysis Pipeline Project\ipl_data_pipeline\data\IPL_dataset_(2008 to 2024).zip" -DestinationPath "D:\IPL End to End Data Analysis Pipeline Project\ipl_data_pipeline\data\extracted" // extract the files in the specific content 
+
+git init  Start tracking your folder with Git
+git add . Select all files to be saved
+git commit -m "message"Permanently snapshot your selected files
+git remote add origin <url>Link your local project to GitHub
+git push -u origin mainUpload your code to GitHub

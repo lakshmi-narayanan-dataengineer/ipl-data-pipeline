@@ -16,3 +16,9 @@ print(matches.head())
 
 print("\nColumn names:")
 print(matches.columns.tolist())
+
+print("\nMissing values in matches:")
+print(matches.isnull().sum())
+
+print("\nData types of each column:")
+print(matches.dtypes)
